@@ -1,30 +1,27 @@
 
-Data Transformation
+## Data Transformation
 
 Effective data transformation is pivotal to delivering high quality data assets in Data products. The document
 covers some mandates that we need to follow while we do so. These mandates coule lie either in a technical landscape
 or exists as "data thing'. Hence these can be catagorised as more of data or more of technical.
 
+The document discusses the following points in detail:
 
-Highlighting a few points here. 
-
-Currently what is existing:
-
-* Wrong usage of data types, resulting in errors that are difficult to catch and they propagate.
-* No logical grouping with in a data asset, resulting in heavy dependency on an external documentation. 
-* No standards around how to encode binary values.
-* Improper partitioning of data assets, resulting the performance of all downstream usages.
-* Improper usage/creation of persistent staging data layer, affecting the quality of business views.
-* Improper encoding of values and the resulting entropy in data compression.
-* No standards around how to represent a relationship data asset.
-* No standards on how to partition a time variant data asset.
-* No proper data dictionary from a customer perpective.
-* Improper usage of toolings while development resulting in nulls in data assets.
-* Considerations while bringing all fields from source data to raw views or business views.
-* How do we define optional or non-optional fields as the data exist in parquet format
-* When do we need to push a transformation rule as a reusable component? Do we support UDFs?
-* Reloading history? A tricky thing.
-* When to consider normalised or denormalised data asset?
+> * Wrong usage of data types, resulting in errors that are difficult to catch and they propagate.
+> * No logical grouping with in a data asset, resulting in heavy dependency on an external documentation. 
+> * No standards around how to encode binary values.
+> * Improper partitioning of data assets, resulting the performance of all downstream usages.
+> * Improper usage/creation of persistent staging data layer, affecting the quality of business views.
+> * Improper encoding of values and the resulting entropy in data compression.
+> * No standards around how to represent a relationship data asset.
+> * No standards on how to partition a time variant data asset.
+> * No proper data dictionary from a customer perpective.
+> * Improper usage of toolings while development resulting in nulls in data assets.
+> * Considerations while bringing all fields from source data to raw views or business views.
+> * How do we define optional or non-optional fields as the data exist in parquet format
+> * When do we need to push a transformation rule as a reusable component? Do we support UDFs?
+> * Reloading history? A tricky thing.
+> * When to consider normalised or denormalised data asset?
 
 
 #### Wrong usage of data types, resulting in errors that are difficult to catch and they propagate.
