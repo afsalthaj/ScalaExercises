@@ -27,21 +27,21 @@ Currently what is existing:
 * When to consider normalised or denormalised data asset?
 
 
-Point 1:
-** Wrong usage of data types, resulting in errors that are difficult to catch and they propagate. **
+#### Wrong usage of data types, resulting in errors that are difficult to catch and they propagate.
 
-Amount:- Any amount field has to be represented as "BigDecimal". How to represent parquet decimal in thrift structure
+* Amount:- Any amount field has to be represented as "BigDecimal". How to represent parquet decimal in thrift structure
 is yet to be considered.
 
-Date :- Again, this has to be of the type data if you are using hive 0.12+. However the current version supports only
+* Date :- Again, this has to be of the type data if you are using hive 0.12+. However the current version supports only
 TimeStamp as the data type. Again,the representation of this in thrift structure is yet to be considered.
 
-We can have further discussions on this aspect for you to follow.
+* We can have further discussions on this aspect for you to follow.
 
-Categorical values :- Although there is no concept of enums in hive, the thrift type should be
-having enum as the data type for categorical values if the possible values are known and predefined and they are small enough. 
-Following this standard will be really handy for downstream such as feature developers. This is because, a federated-developer or feature-developer
-may not have thorough knowledge on what could be the possible values for a particular categorical field. 
+* Categorical values :- 
+bq.Although there is no concept of enums in hive, the thrift type should be
+bq.having enum as the data type for categorical values if the possible values are known and predefined and they are small bq.enough. 
+bq.Following this standard will be really handy for downstream such as feature developers. This is because, a bq.federated-developer or feature-developer
+bq.may not have thorough knowledge on what could be the possible values for a particular categorical field. 
 
 
 Major concerns: 
