@@ -2,8 +2,7 @@
 ## Data Transformation
 
 Effective data transformation is pivotal to delivering high quality data assets in Data products. The document
-covers some mandates that we need to follow while we do so. These mandates coule lie either in a technical landscape
-or exists as "data thing'. Hence these can be catagorised as more of data or more of technical.
+covers some design considerations, standards, mandates, Dos & Donts in any data transformation. These points would lie either in a technical landscape or in a data landscape. Although there is no clear distinction given as of now, we will slowly put this into practice.
 
 The document discusses the following points in detail:
 
